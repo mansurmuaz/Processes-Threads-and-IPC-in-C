@@ -55,7 +55,6 @@ void sort(char *arr[], int n) {
 
 int psearch1b(char* color_name, int input_file_count, char* input_filenames[], char* output_filename) {
 
-
     char* message_in_shared_memory = mmap(NULL, PAGESIZE, PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
     //https://www.youtube.com/watch?v=rPV6b8BUwxM
 
@@ -63,13 +62,6 @@ int psearch1b(char* color_name, int input_file_count, char* input_filenames[], c
         perror("mmap Failed!");
         exit(1);
     }
-
-//    sem_t *semaphore = mmap(NULL, sizeof(sem_t), PROT_READ | PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
-//
-//    if (semaphore == MAP_FAILED) {
-//        perror("mmap Failed!");
-//        exit(1);
-//    }
 
     sem_t mutex;
 
@@ -89,8 +81,6 @@ int psearch1b(char* color_name, int input_file_count, char* input_filenames[], c
         } else if (pid == 0) {     // Child process
 
             sem_wait(&mutex);
-
-
 
             char *file_content = read_file(reading_file);
             int color_count = 0;
@@ -124,17 +114,32 @@ int psearch1b(char* color_name, int input_file_count, char* input_filenames[], c
         wait(&status);
     }
 
-    printf("%s", message_in_shared_memory);
+    FILE *final_output_file = fopen(output_filename , "w");
+
+    if (final_output_file == NULL) {
+        perror("Error occurred when writing file!");
+        exit(0);
+    }
+    fprintf(final_output_file, "%s", message_in_shared_memory);
+    fclose(final_output_file);
 
     return 0;
 }
 
-int main() {
+int main(int argc, char *argv[]) {
 
-    char* input_files[] = {"input3.txt", "input4.txt", "input1.txt", "input2.txt"};
-    int n = sizeof(input_files)/sizeof(input_files[0]);
-    sort(input_files, n);
-    psearch1b("Yellow", 4, input_files, "output.txt");
 
-    return 0;
+    char* color_name = argv[1];
+    int count_of_inout_file = atoi(argv[2]);
+    char* input_filenames[count_of_inout_file];
+    char* output_filename = argv[count_of_inout_file+3];
+
+    for (int i = 0; i < count_of_inout_file; ++i) {
+        input_filenames[i] = argv[i+3];
+    }
+    int n = sizeof(input_filenames)/sizeof(input_filenames[0]);
+    sort(input_filenames, n);
+
+    psearch1b(color_name, count_of_inout_file, input_filenames, output_filename);
+
 }
