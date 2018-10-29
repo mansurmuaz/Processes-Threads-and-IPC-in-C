@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Processes_and_Threads.dir/main.c.o  -o Processes_and_Threads 
