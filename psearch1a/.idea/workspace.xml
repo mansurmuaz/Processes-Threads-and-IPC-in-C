@@ -12,8 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5228162c-1a02-4a4e-80fa-1f2e7e460fd6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../psearch1b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../psearch1b/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../psearch1b/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../psearch1b/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +57,7 @@
     <session id="-1564057419">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="2" />
@@ -103,14 +103,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+            <state relative-caret-position="1132">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#103#950#0" />
                 <element signature="e#952#1140#0" />
                 <element signature="e#1142#1229#0" />
-                <element signature="e#1231#3611#0" />
                 <element signature="e#4036#4845#0" />
               </folding>
             </state>
@@ -216,15 +215,16 @@
       <workItem from="1540641463439" duration="20331000" />
       <workItem from="1540712655198" duration="8537000" />
       <workItem from="1540797865774" duration="54000" />
-      <workItem from="1540797980867" duration="8294000" />
+      <workItem from="1540797980867" duration="9525000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37216000" />
+    <option name="totallyTimeSpent" value="38447000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1166" y="25" width="274" height="875" extended-state="4" />
+    <frame x="876" y="25" width="564" height="875" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.024114544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -278,14 +278,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="122" lean-forward="true" selection-start-line="122" selection-end-line="122" />
+        <state relative-caret-position="1132">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#103#950#0" />
             <element signature="e#952#1140#0" />
             <element signature="e#1142#1229#0" />
-            <element signature="e#1231#3611#0" />
             <element signature="e#4036#4845#0" />
           </folding>
         </state>
