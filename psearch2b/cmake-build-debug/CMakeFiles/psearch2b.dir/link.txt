@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/psearch2b.dir/main.c.o  -o psearch2b 
