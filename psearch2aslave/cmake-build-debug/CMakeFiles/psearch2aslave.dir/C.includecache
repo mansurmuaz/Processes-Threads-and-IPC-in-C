@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mmuazekici/CLionProjects/OS_Course_Project _1/psearch2aslave/main.c
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+sys/stat.h
+-
+sys/mman.h
+-
+linux/mman.h
+-
+fcntl.h
+-
+unistd.h
+-
+
