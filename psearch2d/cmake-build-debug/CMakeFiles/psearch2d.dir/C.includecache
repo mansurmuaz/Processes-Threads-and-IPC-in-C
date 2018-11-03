@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mmuazekici/CLionProjects/OS_Course_Project _1/psearch2d/main.c
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+wait.h
+-
+memory.h
+-
+fcntl.h
+-
+sys/stat.h
+-
+
