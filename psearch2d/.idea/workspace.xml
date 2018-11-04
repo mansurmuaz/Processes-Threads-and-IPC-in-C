@@ -12,8 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22b31cb1-bd21-4c83-b2b0-a79b9063374a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../psearch2b/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../psearch2b/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../psearch2bslave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../psearch2bslave/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../psearch2dslave/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../psearch2dslave/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,45 +35,24 @@
     <expand />
     <select />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/../../AGUOSCourse/project1/psearch2d/main.c">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="17">
-                    <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-                    <folding>
-                      <element signature="e#0#18#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
     <session id="344417323">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="c" value="662" />
+          <entry key="c" value="699" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="662" />
+          <entry key="ObjectiveC" value="699" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -96,8 +74,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+            <state relative-caret-position="299">
+              <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
                 <element signature="e#98#286#0" />
@@ -133,10 +111,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="4">
-    <option name="x" value="759" />
+    <option name="x" value="1001" />
     <option name="y" value="25" />
-    <option name="width" value="681" />
-    <option name="height" value="854" />
+    <option name="width" value="919" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -192,12 +170,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1541250037673</updated>
-      <workItem from="1541250038897" duration="7143000" />
+      <workItem from="1541250038897" duration="7948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7143000" />
+    <option name="totallyTimeSpent" value="7948000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -209,7 +187,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="759" y="25" width="681" height="854" extended-state="4" />
+    <frame x="1001" y="25" width="919" height="1055" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" weight="0.24960998" />
@@ -218,7 +197,7 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" weight="0.32978722" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.2393617" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.18887722" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="CMake" weight="0.32978722" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -249,8 +228,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../../AGUOSCourse/project1/psearch2d/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="170">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -259,8 +238,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="60" column="5" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+        <state relative-caret-position="299">
+          <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
             <element signature="e#98#286#0" />

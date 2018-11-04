@@ -1,0 +1,4 @@
+input1.txt  Yellow  85057/680456
+input2.txt  Yellow  121309/970485
+input3.txt  Yellow  128269/1026155
+input4.txt  Yellow  64945/519557

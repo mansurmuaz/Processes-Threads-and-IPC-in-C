@@ -3,6 +3,11 @@
 #include <unistd.h>
 #include <wait.h>
 #include <memory.h>
+#include <sys/mman.h>
+#include <sys/fcntl.h>
+#include <sys/ipc.h>
+#include <bits/semaphore.h>
+#include <semaphore.h>
 
 static int myCompare (const void * a, const void * b) {    //https://www.geeksforgeeks.org/c-program-sort-array-names-strings/
     return strcmp (*(const char **) a, *(const char **) b);
@@ -14,7 +19,29 @@ void sort(char *arr[], int n) {
 
 int psearch2b(char* color_name, int input_file_count, char* input_filenames[], char* output_filename){
 
+    int file_d = shm_open("/shared_mem", O_CREAT | O_RDWR, S_IRUSR | S_IWUSR | S_IROTH | S_IWOTH);
+    if (file_d == -1) {
+        perror("Shared memory Open Error!!");
+        exit(EXIT_FAILURE);
+    }
 
+    int page_size = (int) sysconf(_SC_PAGESIZE);
+
+    ftruncate(file_d, page_size);
+
+    char *sh_mem = mmap(NULL, page_size, PROT_READ | PROT_WRITE, MAP_SHARED, file_d, 0);
+    if (sh_mem == -1) {
+        perror("Map Failed while mapping shared mem!");
+        exit(EXIT_FAILURE);
+    }
+
+    char *semaphore_name = "/semaphore";
+    sem_t *semaphore = NULL;
+    semaphore = sem_open(semaphore_name, O_CREAT, 0600, 1); // read+write
+    if (semaphore == SEM_FAILED) {
+        perror("Semaphore Failed!");
+        exit(EXIT_FAILURE);
+    }
 
     int status;
 
@@ -26,7 +53,7 @@ int psearch2b(char* color_name, int input_file_count, char* input_filenames[], c
             fprintf(stderr, "Fork Failed!");
             return 1;
         } else if (pid == 0) {  // Child process
-            execlp("../psearch2bslave/psearch2bslave", "psearch2bslave", color_name, reading_file, NULL);  //Execute Slave process
+            execlp("./psearch2bslave", "psearch2bslave", color_name, reading_file, NULL);  //Execute Slave process
             exit(0);
         }
         pid = wait(&status);

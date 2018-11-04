@@ -1,0 +1,1 @@
+/usr/bin/cc  -pthread -g   CMakeFiles/psearch3.dir/main.c.o  -o psearch3 
